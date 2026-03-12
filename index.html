@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Lakes Premium Cleaning Services</title>
+    <meta name="description" content="브리즈번 North Lakes 및 북부 지역 최고의 커머셜, 도메스틱 프리미엄 청소 서비스입니다.">
+    
+    <!-- AOS Library (For Scroll Animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- FontAwesome Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-sparkles"></i></span>
+                <span class="logo-text">ClearVue<br><small>Cleaning Services</small></span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home">홈</a>
+                <a href="#services">서비스</a>
+                <a href="#coverage">서비스 지역</a>
+                <a href="#about">회사 소개</a>
+                <a href="#contact" class="btn-primary-outline">견적 문의</a>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="badge">North Lakes 최고 평점 프리미엄 청소</span>
+                <h1 class="hero-title">
+                    깨끗한 환경이 <br>
+                    <span class="text-gradient">성공적인 비즈니스</span>와 <br>
+                    <span class="text-gradient">행복한 가정</span>을 만듭니다.
+                </h1>
+                <p class="hero-subtitle">
+                    브리즈번 북부(North Lakes, Mango Hill 등) 지역을 위한 전문적이고 믿을 수 있는 상업용(Commercial) 및 가정용(Domestic) 청소 서비스.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">무료 견적 받기 <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="hero-trust">
+                        <span><i class="fa-solid fa-check-circle text-secondary"></i> 100% 만족 보장</span>
+                        <span><i class="fa-solid fa-check-circle text-secondary"></i> 전 직원 산재보험 가입</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Optionally, a right-side hero graphic/card goes here in CSS -->
+        </div>
+        
+        <!-- Shape Divider -->
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="badge text-secondary">Our Expertise</span>
+                <h2>우리가 제공하는 <span class="text-primary">프리미엄 서비스</span></h2>
+                <p>고객님의 공간을 완벽하게 탈바꿈시켜 드립니다.</p>
+            </div>
+            
+            <div class="service-grid">
+                <!-- Commercial Service Card -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Commercial Cleaning">
+                        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h3>커머셜 청소 (Commercial)</h3>
+                        <p>사무실, 병원, 피트니스 센터, 학원 등 비즈니스 공간을 위한 정기 청소 서비스. 쾌적한 업무 환경이 생산성을 높입니다.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check text-secondary"></i> 맞춤형 주/월간 정기 청소</li>
+                            <li><i class="fa-solid fa-check text-secondary"></i> 바닥 및 카펫 전문 클리닝</li>
+                            <li><i class="fa-solid fa-check text-secondary"></i> 위생 및 방역 시스템</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Domestic Service Card -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" alt="Domestic Cleaning">
+                        <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h3>도메스틱 청소 (Domestic)</h3>
+                        <p>일반 가정집, 아파트를 위한 프리미엄 하우스 키핑. 이사 청소(Bond Cleaning)부터 정기 방문 청소까지 완벽하게 관리해 드립니다.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check text-secondary"></i> 정기 방문 하우스 클리닝</li>
+                            <li><i class="fa-solid fa-check text-secondary"></i> 완벽한 이사/입주 청소 (Bond)</li>
+                            <li><i class="fa-solid fa-check text-secondary"></i> 친환경(Eco-friendly) 제품 사용</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Area Section -->
+    <section id="coverage" class="coverage bg-light">
+        <div class="container">
+            <div class="coverage-content">
+                <div class="coverage-text" data-aos="fade-right">
+                    <span class="badge text-secondary">Service Areas</span>
+                    <h2>브리즈번 북부 <br><span class="text-primary">전 지역 커버</span></h2>
+                    <p>저희는 North Lakes를 중심으로 브리즈번 북부 전 지역에 신속하고 체계적인 청소 서비스를 제공합니다.</p>
+                    
+                    <ul class="area-list">
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> North Lakes</li>
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> Mango Hill</li>
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> Murrumba Downs</li>
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> Kallangur</li>
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> Dakabin & Kurwongbah</li>
+                        <li><i class="fa-solid fa-location-dot text-secondary"></i> Redcliffe Peninsula</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <a href="#contact" class="btn btn-primary-outline">내 지역 확인하기</a>
+                    </div>
+                </div>
+                <div class="coverage-image" data-aos="fade-left">
+                    <!-- Placeholder for Map/Area Graphic style image -->
+                    <div class="map-placeholder">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Brisbane North Suburbs">
+                        <div class="map-overlay-card">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div>
+                                <h4>North Lakes 베이스</h4>
+                                <p>브리즈번 북부 30km 반경</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2670&auto=format&fit=crop" alt="Cleaning Professional" class="about-main-img">
+                    <div class="experience-badge">
+                        <span class="num">10+</span>
+                        <span class="text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <span class="badge text-secondary">Why Choose Us</span>
+                    <h2>고객의 신뢰를 바탕으로 <br><span class="text-primary">성장하는 기업</span></h2>
+                    <p>단순히 눈에 보이는 곳만 치우는 것이 아닙니다. 거주자와 방문객 모두가 안심할 수 있는 위생적인 환경을 만드는 것이 저희의 철학입니다.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4>100% 신뢰 보장</h4>
+                                <p>모든 직원은 신원 확인 및 경찰 신원 조회(Police Check)를 완료했습니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div>
+                                <h4>친환경 약품 사용</h4>
+                                <p>인체와 반려동물에게 안전한 고품질 친환경 청소 제품만 고집합니다.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+                            <div>
+                                <h4>숙련된 전문가</h4>
+                                <p>다년간의 커머셜/도메스틱 청소 경험을 갖춘 베테랑 팀이 투입됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact bg-primary text-white" style="position: relative; overflow: hidden;">
+        <!-- Top Wave Divider -->
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container" style="padding-top: 5rem;">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="badge" style="background: rgba(255,255,255,0.1); color: var(--clr-secondary-400); border: 1px solid rgba(255,255,255,0.2);">Get a Quote</span>
+                    <h2 style="color: var(--clr-white); font-size: clamp(2.5rem, 4vw, 3.5rem); margin: 1rem 0;">무료 견적 <br><span class="text-secondary">문의하기</span></h2>
+                    <p style="color: var(--clr-neutral-100); opacity: 0.8; margin-bottom: 2rem;">청소가 필요한 공간과 원하시는 서비스를 남겨주시면, 확인 후 신속하게 맞춤 견적을 안내해 드립니다.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>0400 000 000</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@clearvue.com.au</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon - Sun: 7:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">이름 (Name)</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">연락처 (Phone)</label>
+                                <input type="tel" id="phone" placeholder="0400 000 000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">필요한 서비스</label>
+                                <select id="serviceType" required>
+                                    <option value="">선택해주세요</option>
+                                    <option value="commercial">상업용 (오피스/상가) 청소</option>
+                                    <option value="bond">이사/입주 (Bond) 청소</option>
+                                    <option value="domestic">일반 가정 (Domestic) 정기 청소</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">주소 / 지역 (Suburb)</label>
+                            <input type="text" id="address" placeholder="e.g. North Lakes" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">문의 내용 (Details)</label>
+                            <textarea id="message" rows="4" placeholder="방 개수, 화장실 개수, 특별히 신경 써야 할 부분 등을 적어주시면 더 정확한 견적이 가능합니다."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%; justify-content: center;">견적 요청하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <span class="logo-text" style="color: var(--clr-primary-900);">ClearVue</span>
+                </a>
+                <p>North Lakes 및 브리즈번 북부 지역 최고의 프리미엄 커머셜 & 도메스틱 청소 서비스.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#services">서비스 안내</a></li>
+                    <li><a href="#coverage">서비스 지역</a></li>
+                    <li><a href="#about">회사 소개</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">오피스 청소</a></li>
+                    <li><a href="#">상가/매장 청소</a></li>
+                    <li><a href="#">이사(Bond) 청소</a></li>
+                    <li><a href="#">정기 방문 청소</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 ClearVue Cleaning Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>

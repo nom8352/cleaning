@@ -65,15 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const suburb = form.querySelector("#suburb")?.value.trim() || "";
             const message = form.querySelector("#message")?.value.trim() || "";
 
-            const subject = encodeURIComponent(`[North Lakes Home & Commercial Cleaning 문의] ${serviceType || "청소 상담"}`);
+            const subject = encodeURIComponent(`[North Lakes Home & Commercial Cleaning] ${serviceType || "Cleaning enquiry"}`);
             const body = encodeURIComponent(
                 [
-                    `이름: ${name}`,
-                    `연락처: ${phone}`,
-                    `서비스 유형: ${serviceType}`,
-                    `지역: ${suburb}`,
+                    `Name: ${name}`,
+                    `Phone: ${phone}`,
+                    `Service type: ${serviceType}`,
+                    `Suburb: ${suburb}`,
                     "",
-                    "상세 요청사항",
+                    "Job details",
                     message || "-"
                 ].join("\n")
             );

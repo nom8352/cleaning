@@ -1,49 +1,84 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // === Initialize AOS Animations ===
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    const mobileButton = document.querySelector(".mobile-menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+    const revealItems = document.querySelectorAll("[data-reveal]");
+    const form = document.querySelector("#quoteForm");
 
-    // === Navigation Scroll Effect ===
-    const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+    const closeMenu = () => {
+        if (!navLinks || !mobileButton) {
+            return;
         }
-    });
 
-    // === Mobile Menu Toggle ===
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        
-        // Toggle Icon
-        const icon = mobileBtn.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark');
-        } else {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        }
-    });
-    
-    // Close mobile menu when a link is clicked
-    const links = document.querySelectorAll('.nav-links a');
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            const icon = mobileBtn.querySelector('i');
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
+        navLinks.classList.remove("active");
+        mobileButton.setAttribute("aria-expanded", "false");
+        mobileButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    };
+
+    if (mobileButton && navLinks) {
+        mobileButton.addEventListener("click", () => {
+            const isActive = navLinks.classList.toggle("active");
+            mobileButton.setAttribute("aria-expanded", String(isActive));
+            mobileButton.innerHTML = isActive
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
         });
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+    }
+
+    window.addEventListener("scroll", () => {
+        if (!navbar) {
+            return;
+        }
+
+        navbar.classList.toggle("is-scrolled", window.scrollY > 24);
     });
+
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.18 }
+        );
+
+        revealItems.forEach((item) => observer.observe(item));
+    } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+    }
+
+    if (form) {
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = form.querySelector("#name")?.value.trim() || "";
+            const phone = form.querySelector("#phone")?.value.trim() || "";
+            const serviceType = form.querySelector("#serviceType")?.value.trim() || "";
+            const suburb = form.querySelector("#suburb")?.value.trim() || "";
+            const message = form.querySelector("#message")?.value.trim() || "";
+
+            const subject = encodeURIComponent(`[ClearVue 문의] ${serviceType || "청소 상담"}`);
+            const body = encodeURIComponent(
+                [
+                    `이름: ${name}`,
+                    `연락처: ${phone}`,
+                    `서비스 유형: ${serviceType}`,
+                    `지역: ${suburb}`,
+                    "",
+                    "상세 요청사항",
+                    message || "-"
+                ].join("\n")
+            );
+
+            window.location.href = `mailto:info@clearvue.com.au?subject=${subject}&body=${body}`;
+        });
+    }
 });

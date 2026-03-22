@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const suburb = form.querySelector("#suburb")?.value.trim() || "";
             const message = form.querySelector("#message")?.value.trim() || "";
 
-            const subject = encodeURIComponent(`[ClearVue 문의] ${serviceType || "청소 상담"}`);
+            const subject = encodeURIComponent(`[North Lakes Home & Commercial Cleaning 문의] ${serviceType || "청소 상담"}`);
             const body = encodeURIComponent(
                 [
                     `이름: ${name}`,

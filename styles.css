@@ -413,6 +413,35 @@ textarea {
     gap: 16px;
 }
 
+.hero-photo-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr 1fr;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.hero-photo {
+    margin: 0;
+    min-height: 148px;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-photo-wide {
+    grid-row: span 2;
+    min-height: 310px;
+}
+
+.hero-photo img,
+.service-photo img,
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .hero-mini-card {
     padding: 20px;
     border-radius: 22px;
@@ -514,6 +543,13 @@ textarea {
     min-height: 100%;
 }
 
+.service-photo {
+    margin: -30px -30px 22px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 28px 28px 18px 18px;
+}
+
 .service-block.commercial {
     box-shadow: inset 0 1px 0 rgba(124, 243, 255, 0.2);
 }
@@ -599,6 +635,49 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     margin-top: 22px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-card {
+    margin: 0;
+    position: relative;
+    min-height: 260px;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.gallery-card::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 55%;
+    background: linear-gradient(180deg, transparent, rgba(4, 8, 20, 0.88));
+}
+
+.gallery-card figcaption {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 16px;
+    z-index: 1;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.gallery-card-tall {
+    grid-row: span 2;
+    min-height: 540px;
+}
+
+.gallery-card-wide {
+    grid-column: span 2;
 }
 
 .support-card,
@@ -846,6 +925,7 @@ textarea {
 
     .service-showcase,
     .support-grid,
+    .gallery-grid,
     .process-steps,
     .assurance-grid,
     .signal-grid,
@@ -897,14 +977,26 @@ textarea {
     }
 
     .hero-mini-grid,
+    .hero-photo-grid,
     .service-showcase,
     .support-grid,
+    .gallery-grid,
     .process-steps,
     .assurance-grid,
     .signal-grid,
     .footer-layout,
     .field-row {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-card-wide {
+        grid-column: span 1;
+    }
+
+    .gallery-card-tall,
+    .hero-photo-wide {
+        grid-row: span 1;
+        min-height: 260px;
     }
 
     .hero-actions {

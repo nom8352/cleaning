@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Lakes Home & Commercial Cleaning</title>
-    <meta name="description" content="North Lakes Home & Commercial Cleaning provides reliable domestic and commercial cleaning across North Lakes and nearby suburbs.">
-    <meta name="theme-color" content="#081229">
+    <title>North Lakes Commercial Cleaning | Professional Cleaning Services</title>
+    <meta name="description" content="North Lakes Commercial Cleaning provides reliable, high-quality cleaning services for offices, businesses, and commercial properties.">
+    <meta name="theme-color" content="#0a2d5c">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +15,19 @@
 </head>
 <body>
     <div class="site-shell">
-        <div class="bg-orb orb-one" aria-hidden="true"></div>
-        <div class="bg-orb orb-two" aria-hidden="true"></div>
-        <div class="bg-grid" aria-hidden="true"></div>
-
+        <!-- Header / Navigation -->
         <nav class="navbar" id="top">
             <div class="container nav-container">
-                <a href="#home" class="brand">
-                    <span class="brand-mark">CV</span>
+                <a href="#top" class="brand">
+                    <!-- SVG logo matching the blue icon from the design -->
+                    <svg class="brand-logo-svg" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 30L25 10L38 30H12Z" fill="#0056b3" stroke="#0056b3" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M3 35H47" stroke="#0056b3" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M25 17L33 30H17L25 17Z" fill="#a4c2f4"/>
+                    </svg>
                     <span class="brand-copy">
-                        <strong>North Lakes Home & Commercial Cleaning</strong>
-                        <small>Domestic & Commercial Cleaning</small>
+                        <span class="brand-main">North Lakes</span>
+                        <span class="brand-sub">COMMERCIAL CLEANING</span>
                     </span>
                 </a>
 
@@ -34,395 +36,408 @@
                 </button>
 
                 <div class="nav-links" id="site-menu">
-                    <a href="#services">Services</a>
-                    <a href="#process">Process</a>
-                    <a href="#coverage">Service Area</a>
-                    <a href="#about">Why Us</a>
-                    <a href="#contact" class="nav-cta">Get a Quote</a>
+                    <a href="#top">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services" class="dropdown-link">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <a href="#industries">Industries</a>
+                    <a href="#coverage">Service Areas</a>
+                    <a href="#about">Why Choose Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="tel:0712345678" class="nav-phone-btn">
+                        <i class="fa-solid fa-phone"></i> 07 1234 5678
+                    </a>
                 </div>
             </div>
         </nav>
 
         <main>
-            <header class="hero" id="home">
+            <!-- Hero Section -->
+            <header class="hero">
                 <div class="container hero-layout">
-                    <section class="hero-copy" data-reveal>
-                        <span class="eyebrow">SUPERNOVA REDESIGN</span>
+                    <section class="hero-copy">
                         <h1>
-                            The cleaning brand
-                            <span>North Lakes homes and businesses</span>
-                            can trust
+                            Professional cleaning that keeps your business shining
                         </h1>
                         <p class="hero-summary">
-                            From recurring home cleaning to offices, retail, clinics, and strata spaces,
-                            this landing page is designed to present domestic and commercial cleaning
-                            under one clear, confident brand.
+                            North Lakes Commercial Cleaning provides reliable, high-quality cleaning services for offices, businesses, and commercial properties across North Lakes and surrounding areas.
                         </p>
 
                         <div class="hero-actions">
-                            <a href="#contact" class="btn btn-primary">Request a Free Quote</a>
-                            <a href="#services" class="btn btn-secondary">View Services</a>
+                            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
                         </div>
 
-                        <ul class="hero-points">
-                            <li><i class="fa-solid fa-bolt"></i> Fast quote response</li>
-                            <li><i class="fa-solid fa-shield-halved"></i> Reliable service systems</li>
-                            <li><i class="fa-solid fa-sparkles"></i> Domestic + commercial coverage</li>
-                        </ul>
+                        <!-- 3 Core Trust Signals at Hero Bottom -->
+                        <div class="hero-signals">
+                            <article class="signal-item">
+                                <div class="signal-icon-box">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div class="signal-text">
+                                    <strong>Reliable & Trustworthy</strong>
+                                    <p>Fully insured and police checked team.</p>
+                                </div>
+                            </article>
+                            <article class="signal-item">
+                                <div class="signal-icon-box">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div class="signal-text">
+                                    <strong>Satisfaction Guaranteed</strong>
+                                    <p>We're not happy unless you are.</p>
+                                </div>
+                            </article>
+                            <article class="signal-item">
+                                <div class="signal-icon-box">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <div class="signal-text">
+                                    <strong>Eco-Friendly Products</strong>
+                                    <p>Safe for your workplace and the environment.</p>
+                                </div>
+                            </article>
+                        </div>
                     </section>
 
-                    <aside class="hero-panel" data-reveal>
-                        <div class="panel-glow"></div>
-                        <div class="hero-card hero-card-primary">
-                            <p class="card-label">Featured offer</p>
-                            <h2>North Lakes recurring cleaning setup</h2>
-                            <p>From the first enquiry to scope checks and repeat booking offers, the journey is designed to convert smoothly.</p>
-                            <div class="hero-tags">
-                                <span>Domestic</span>
-                                <span>Commercial</span>
-                                <span>Recurring</span>
-                            </div>
-                        </div>
-
-                        <div class="hero-mini-grid">
-                            <article class="hero-mini-card">
-                                <strong>Key clients</strong>
-                                <p>Homes, offices, clinics, strata, and retail spaces</p>
-                            </article>
-                            <article class="hero-mini-card">
-                                <strong>Service area</strong>
-                                <p>North Lakes, Mango Hill, Griffin, and Kallangur</p>
-                            </article>
-                        </div>
-
-                        <div class="hero-photo-grid">
-                            <figure class="hero-photo hero-photo-wide">
-                                <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner mopping a polished floor">
-                            </figure>
-                            <figure class="hero-photo">
-                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8MTB8fGNsZWFuaW5nJTIwc2VydmljZXxlbnwwfHx8fDE3NzQyNzA5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1600" alt="Professional cleaner working in a bright interior">
-                            </figure>
-                            <figure class="hero-photo">
-                                <img src="https://images.unsplash.com/photo-1581578949510-fa7315c4c350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8MTJ8fGNsZWFuaW5nJTIwc2VydmljZXxlbnwwfHx8fDE3NzQyNzA5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner wiping a glass surface">
-                            </figure>
-                        </div>
-
-                        <div class="hero-meter">
-                            <div>
-                                <span>Brand position</span>
-                                <strong>Premium + practical</strong>
-                            </div>
-                            <div class="meter-bar">
-                                <span></span>
-                            </div>
+                    <aside class="hero-panel">
+                        <div class="hero-photo-wrap">
+                            <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?q=80&w=1000" alt="Professional cleaner mopping a clean office lobby floor" class="hero-main-img">
                         </div>
                     </aside>
                 </div>
             </header>
 
-            <section class="signal-strip" data-reveal>
-                <div class="container signal-grid">
-                    <article>
-                        <strong>01</strong>
-                        <p>A structure that clearly separates domestic and commercial work</p>
-                    </article>
-                    <article>
-                        <strong>02</strong>
-                        <p>Local trust signals and clear call-to-actions throughout the page</p>
-                    </article>
-                    <article>
-                        <strong>03</strong>
-                        <p>Lightweight animation and mobile-first usability for a static site</p>
-                    </article>
-                </div>
-            </section>
-
+            <!-- Services Section -->
             <section class="services section" id="services">
                 <div class="container">
-                    <div class="section-heading" data-reveal>
-                        <span class="eyebrow">SERVICES</span>
-                        <h2>Two core services visitors can understand at a glance</h2>
-                        <p>Instead of a generic cleaning layout, this section makes it obvious who you serve and what each service covers.</p>
+                    <div class="section-heading">
+                        <span class="eyebrow">OUR SERVICES</span>
+                        <h2>Cleaning solutions tailored to your needs</h2>
+                        <div class="accent-bar"></div>
                     </div>
 
-                    <div class="service-showcase">
-                        <article class="service-block commercial" data-reveal>
-                            <figure class="service-photo">
-                                <img src="https://images.unsplash.com/photo-1686178827149-6d55c72d81df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8Mnx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Commercial cleaner preparing a workspace">
+                    <div class="services-grid">
+                        <article class="service-card">
+                            <figure class="service-img-container">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600" alt="Office desks in a clean corporate office space">
                             </figure>
-                            <div class="service-kicker">
-                                <span class="icon-wrap"><i class="fa-solid fa-building"></i></span>
-                                <span>Commercial Cleaning</span>
+                            <div class="service-card-body">
+                                <h3>Commercial Cleaning</h3>
+                                <p>Daily office cleaning, shared spaces, restrooms, and more.</p>
                             </div>
-                            <h3>Commercial cleaning that improves the feel of your workspace</h3>
-                            <p>
-                                Designed for offices, small retail, clinics, studios, and shared areas,
-                                this offer focuses on repeat cleaning agreements with dependable scheduling
-                                and clear communication.
-                            </p>
-                            <ul>
-                                <li>Recurring office and retail cleaning</li>
-                                <li>Clinic and consulting room hygiene support</li>
-                                <li>Shared areas, strata, and pre-occupancy clean-ups</li>
-                            </ul>
                         </article>
 
-                        <article class="service-block domestic" data-reveal>
-                            <figure class="service-photo">
-                                <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8NHx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Domestic cleaner working in a bright home">
+                        <article class="service-card">
+                            <figure class="service-img-container">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600" alt="Professional cleaner using a floor buffing machine on a hard floor">
                             </figure>
-                            <div class="service-kicker">
-                                <span class="icon-wrap"><i class="fa-solid fa-house"></i></span>
-                                <span>Domestic Cleaning</span>
+                            <div class="service-card-body">
+                                <h3>Floor Care</h3>
+                                <p>Stripping, sealing, polishing and hard floor maintenance.</p>
                             </div>
-                            <h3>Domestic cleaning that fits around real home routines</h3>
-                            <p>
-                                From recurring visits and deep cleaning to move-in and move-out jobs,
-                                this service is positioned to reduce the most common pain points in busy homes
-                                and deliver a cleaner, lighter living environment.
-                            </p>
-                            <ul>
-                                <li>Weekly and fortnightly recurring visits</li>
-                                <li>Kitchen and bathroom deep cleaning</li>
-                                <li>Move-in, move-out, and end-of-lease cleaning</li>
-                            </ul>
+                        </article>
+
+                        <article class="service-card">
+                            <figure class="service-img-container">
+                                <img src="https://images.unsplash.com/photo-1527263539676-1148825c347e?q=80&w=600" alt="Cleaner squeegeeing a large office window pane">
+                            </figure>
+                            <div class="service-card-body">
+                                <h3>Window Cleaning</h3>
+                                <p>Internal and external window cleaning for any building.</p>
+                            </div>
+                        </article>
+
+                        <article class="service-card">
+                            <figure class="service-img-container">
+                                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=600" alt="Sanitized commercial kitchen area with stainless steel surfaces">
+                            </figure>
+                            <div class="service-card-body">
+                                <h3>Specialised Cleaning</h3>
+                                <p>High-touch point disinfecting, end of lease, and more.</p>
+                            </div>
                         </article>
                     </div>
 
-                    <div class="support-grid">
-                        <article class="support-card" data-reveal>
-                            <span>Quoting</span>
-                            <h3>Fast and clear quoting</h3>
-                            <p>Quotes are shaped around property type, size, visit frequency, and any special requests.</p>
-                        </article>
-                        <article class="support-card" data-reveal>
-                            <span>Operations</span>
-                            <h3>Built for repeat business</h3>
-                            <p>The page is designed to support recurring bookings and referral-driven growth, not just one-off enquiries.</p>
-                        </article>
-                        <article class="support-card" data-reveal>
-                            <span>Brand feel</span>
-                            <h3>Clean, bold, and premium</h3>
-                            <p>Deep navy backgrounds and bright accent colors create a stronger, more memorable first impression.</p>
-                        </article>
+                    <div class="services-action">
+                        <a href="#contact" class="btn btn-outline">View All Services</a>
                     </div>
                 </div>
             </section>
 
-            <section class="gallery section" id="gallery">
-                <div class="container">
-                    <div class="section-heading" data-reveal>
-                        <span class="eyebrow">WORK IN ACTION</span>
-                        <h2>More real-world visuals across homes, offices, and detail cleaning scenes</h2>
-                        <p>This gallery adds more on-site energy to the page so the brand feels less abstract and more operational.</p>
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-us section" id="about">
+                <div class="container split-layout">
+                    <div class="split-photo-panel">
+                        <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1000" alt="Two professional cleaners dusting and cleaning office workstations" class="split-img">
                     </div>
-
-                    <div class="gallery-grid">
-                        <figure class="gallery-card gallery-card-tall" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1669101602108-fa5ba89507ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8NXx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner wiping down a kitchen bench">
-                            <figcaption>Kitchen and detail cleaning</figcaption>
-                        </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8Nnx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner working through a living room">
-                            <figcaption>Domestic recurring visits</figcaption>
-                        </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8N3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaning tools ready for a scheduled job">
-                            <figcaption>Prepared teams and equipment</figcaption>
-                        </figure>
-                        <figure class="gallery-card gallery-card-wide" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8OHx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner sanitising a workspace surface">
-                            <figcaption>Commercial hygiene and surface care</figcaption>
-                        </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1580256081112-e49377338b7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8OXx8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc3NDI3MDk3OXww&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner polishing a modern interior">
-                            <figcaption>Presentation-ready spaces</figcaption>
-                        </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="https://images.unsplash.com/photo-1642505172378-a6f5e5b15580?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDQ0fDB8MXxzZWFyY2h8MTF8fGNsZWFuaW5nJTIwc2VydmljZXxlbnwwfHx8fDE3NzQyNzA5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1600" alt="Cleaner handling bathroom detail work">
-                            <figcaption>Bathroom and wet-area detailing</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-
-            <section class="process section" id="process">
-                <div class="container process-layout">
-                    <div class="section-heading align-left" data-reveal>
-                        <span class="eyebrow">PROCESS</span>
-                        <h2>A process that supports enquiries, quoting, and repeat bookings</h2>
-                        <p>This is not just a visual refresh. The page flow is arranged to support conversion and ongoing client retention.</p>
-                    </div>
-
-                    <div class="process-steps">
-                        <article class="step-card" data-reveal>
-                            <strong>01</strong>
-                            <h3>Enquiry received</h3>
-                            <p>We quickly confirm the property type, service required, and preferred timing.</p>
-                        </article>
-                        <article class="step-card" data-reveal>
-                            <strong>02</strong>
-                            <h3>Scope and quote prepared</h3>
-                            <p>Domestic and commercial jobs follow different scope logic, so the quote process reflects that clearly.</p>
-                        </article>
-                        <article class="step-card" data-reveal>
-                            <strong>03</strong>
-                            <h3>Repeat service conversion</h3>
-                            <p>After the first job, review requests and rebooking prompts help move clients into recurring work.</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="coverage section" id="coverage">
-                <div class="container coverage-layout">
-                    <div class="coverage-copy" data-reveal>
-                        <span class="eyebrow">SERVICE AREA</span>
-                        <h2>Built around North Lakes for faster response and tighter scheduling</h2>
-                        <p>
-                            Rather than looking overly broad, the service area is positioned around a realistic local radius
-                            so response times, recurring schedules, and customer trust all feel stronger.
-                        </p>
-
-                        <div class="suburb-tags">
-                            <span>North Lakes</span>
-                            <span>Mango Hill</span>
-                            <span>Griffin</span>
-                            <span>Murrumba Downs</span>
-                            <span>Kallangur</span>
-                            <span>Dakabin</span>
-                            <span>Rothwell</span>
-                            <span>Redcliffe</span>
-                        </div>
-                    </div>
-
-                    <div class="coverage-card" data-reveal>
-                        <div class="coverage-ring"></div>
-                        <div class="coverage-core">
-                            <span>BASE</span>
-                            <strong>North Lakes</strong>
-                            <p>A practical base for running both domestic cleaning and small commercial contracts.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about section" id="about">
-                <div class="container about-layout">
-                    <div class="section-heading align-left" data-reveal>
-                        <span class="eyebrow">WHY US</span>
-                        <h2>Only the trust signals that matter before someone enquires</h2>
-                        <p>Instead of vague premium claims, this section focuses on the things clients actually want to know before they contact you.</p>
-                    </div>
-
-                    <div class="assurance-grid">
-                        <article class="assurance-card" data-reveal>
-                            <i class="fa-solid fa-user-shield"></i>
-                            <h3>Reliable service visits</h3>
-                            <p>Clear communication around timing, scope, access, and expectations supports a more professional experience.</p>
-                        </article>
-                        <article class="assurance-card" data-reveal>
-                            <i class="fa-solid fa-pump-soap"></i>
-                            <h3>Cleaning tailored to the space</h3>
-                            <p>Homes and workplaces need different cleaning logic, so the service messaging reflects that from the start.</p>
-                        </article>
-                        <article class="assurance-card" data-reveal>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <h3>Designed for repeat work</h3>
-                            <p>The page and offer structure support recurring bookings, not just one-off jobs.</p>
-                        </article>
-                        <article class="assurance-card" data-reveal>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <h3>Local and responsive</h3>
-                            <p>The messaging keeps North Lakes at the center, reinforcing familiarity and faster on-site response.</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact section" id="contact">
-                <div class="container contact-layout">
-                    <div class="contact-copy" data-reveal>
-                        <span class="eyebrow">GET A QUOTE</span>
-                        <h2>Now that the website looks stronger, the next step is enquiry conversion</h2>
-                        <p>
-                            Share your property type and suburb and we can respond with the most suitable cleaning scope.
-                            The current form is set up to open a pre-filled email enquiry.
-                        </p>
-
-                        <ul class="contact-points">
-                            <li><i class="fa-solid fa-phone"></i> Fast response to new enquiries</li>
-                            <li><i class="fa-solid fa-envelope"></i> Service-specific quote guidance</li>
-                            <li><i class="fa-solid fa-calendar-days"></i> Suitable for recurring booking discussions</li>
+                    <div class="split-copy-panel">
+                        <h2>Why choose North Lakes Commercial Cleaning?</h2>
+                        
+                        <ul class="check-list">
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                                <span class="list-text">Locally owned and operated</span>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                                <span class="list-text">Trained, experienced, and reliable cleaners</span>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                                <span class="list-text">Flexible schedules to suit your business</span>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                                <span class="list-text">Competitive pricing with no lock-in contracts</span>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                                <span class="list-text">Committed to providing high-quality service</span>
+                            </li>
                         </ul>
+
+                        <div class="split-action">
+                            <a href="#contact" class="btn btn-primary">Learn More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Industries We Serve Section -->
+            <section class="industries section" id="industries">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="eyebrow">INDUSTRIES WE SERVE</span>
+                        <h2>Proudly cleaning a wide range of businesses</h2>
                     </div>
 
-                    <div class="quote-card" data-reveal>
-                        <form class="contact-form" id="quoteForm">
-                            <div class="field">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <div class="industries-grid">
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-regular fa-building"></i>
                             </div>
+                            <h3>Offices & Workspaces</h3>
+                        </article>
 
-                            <div class="field-row">
-                                <div class="field">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="0400 000 000" required>
-                                </div>
-                                <div class="field">
-                                    <label for="serviceType">Service type</label>
-                                    <select id="serviceType" name="serviceType" required>
-                                        <option value="">Please select</option>
-                                        <option value="Commercial cleaning">Commercial cleaning</option>
-                                        <option value="Recurring domestic cleaning">Recurring domestic cleaning</option>
-                                        <option value="Deep cleaning">Deep cleaning</option>
-                                        <option value="Move-in / move-out cleaning">Move-in / move-out cleaning</option>
-                                    </select>
-                                </div>
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-solid fa-briefcase-medical"></i>
                             </div>
+                            <h3>Medical & Healthcare</h3>
+                        </article>
 
-                            <div class="field">
-                                <label for="suburb">Suburb</label>
-                                <input type="text" id="suburb" name="suburb" placeholder="e.g. North Lakes" required>
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-solid fa-store"></i>
                             </div>
+                            <h3>Retail & Showrooms</h3>
+                        </article>
 
-                            <div class="field">
-                                <label for="message">Job details</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Tell us about the space, preferred timing, and any special requests"></textarea>
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
+                            <h3>Schools & Education</h3>
+                        </article>
 
-                            <button type="submit" class="btn btn-primary btn-full">Send quote enquiry</button>
-                            <p class="form-note">Default email connection: info@clearvue.com.au</p>
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <h3>Industrial & Warehouses</h3>
+                        </article>
+
+                        <article class="industry-item">
+                            <div class="industry-icon-box">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <h3>Body Corporate</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Request a Free Quote Section -->
+            <section class="quick-quote-section" id="contact">
+                <div class="container">
+                    <div class="quote-bar-card">
+                        <div class="quote-bar-text">
+                            <h2>Request a free quote</h2>
+                            <p>Tell us about your cleaning needs and we'll get back to you with a custom quote.</p>
+                        </div>
+                        <form class="quote-bar-form" id="quoteForm">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <button type="submit" class="btn btn-quote-submit">Request Quote</button>
                         </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="eyebrow">WHAT OUR CLIENTS SAY</span>
+                        <h2>Trusted by businesses across North Lakes</h2>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        <article class="testimonial-card">
+                            <div class="quote-marks">“</div>
+                            <p class="testimonial-text">
+                                The team at North Lakes are reliable, thorough and always go the extra mile. Our office has never looked better.
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Sarah J.</strong>
+                                <span>Office Manager</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="quote-marks">“</div>
+                            <p class="testimonial-text">
+                                We've been using their services for over a year and couldn't be happier with the level of service and attention to detail.
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Michael T.</strong>
+                                <span>Facilities Manager</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="quote-marks">“</div>
+                            <p class="testimonial-text">
+                                Professional, friendly and great value. Highly recommend to any business looking for a quality cleaning partner.
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Emma R.</strong>
+                                <span>Practice Manager</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Testimonial Carousel Dots -->
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Coverage Areas (Subtitle Info support) -->
+            <section class="coverage-cities section" id="coverage">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="eyebrow">SERVICE AREAS</span>
+                        <h2>Proudly serving North Lakes & surrounding suburbs</h2>
+                    </div>
+                    <div class="coverage-suburbs-list">
+                        <span>North Lakes</span>
+                        <span>Mango Hill</span>
+                        <span>Griffin</span>
+                        <span>Murrumba Downs</span>
+                        <span>Kallangur</span>
+                        <span>Dakabin</span>
+                        <span>Rothwell</span>
+                        <span>Redcliffe</span>
                     </div>
                 </div>
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
-            <div class="container footer-layout">
-                <div>
-                    <a href="#top" class="brand footer-brand">
-                        <span class="brand-mark">CV</span>
+            <div class="container footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col brand-col">
+                    <a href="#top" class="brand">
+                        <svg class="brand-logo-svg" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 30L25 10L38 30H12Z" fill="#0056b3" stroke="#0056b3" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M3 35H47" stroke="#0056b3" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M25 17L33 30H17L25 17Z" fill="#a4c2f4"/>
+                        </svg>
                         <span class="brand-copy">
-                            <strong>North Lakes Home & Commercial Cleaning</strong>
-                            <small>Domestic & Commercial Cleaning</small>
+                            <span class="brand-main">North Lakes</span>
+                            <span class="brand-sub">COMMERCIAL CLEANING</span>
                         </span>
                     </a>
-                    <p>A supernova-style homepage refresh for a North Lakes domestic and commercial cleaning service.</p>
+                    <p class="footer-desc">
+                        Reliable, professional and affordable cleaning services for businesses in North Lakes and surrounding areas.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                    </div>
                 </div>
 
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#process">Process</a>
-                    <a href="#coverage">Service Area</a>
-                    <a href="#contact">Get a Quote</a>
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#coverage">Service Areas</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
 
-                <div class="footer-meta">
-                    <span>Phone 0400 000 000</span>
-                    <span>Email info@clearvue.com.au</span>
-                    <span>Open 7 Days</span>
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#services">Commercial Cleaning</a></li>
+                        <li><a href="#services">Floor Care</a></li>
+                        <li><a href="#services">Window Cleaning</a></li>
+                        <li><a href="#services">Specialised Cleaning</a></li>
+                        <li><a href="#services">End of Lease Cleaning</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>North Lakes, QLD 4509</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:0712345678">07 1234 5678</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:info@northlakescleaning.com.au">info@northlakescleaning.com.au</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Mon - Fri: 8:00am - 5:00pm<br>Sat - Sun: Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container footer-bottom-layout">
+                    <p>&copy; 2026 North Lakes Commercial Cleaning. All rights reserved.</p>
+                    <div class="footer-policy-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
                 </div>
             </div>
         </footer>

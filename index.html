@@ -6,6 +6,7 @@
     <title>North Lakes Commercial Cleaning | Professional Cleaning Services</title>
     <meta name="description" content="North Lakes Commercial Cleaning provides reliable, high-quality cleaning services for offices, businesses, and commercial properties.">
     <meta name="theme-color" content="#0a2d5c">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +20,7 @@
         <nav class="navbar" id="top">
             <div class="container nav-container">
                 <a href="#top" class="brand">
-                    <!-- SVG logo matching the blue icon from the design -->
-                    <svg class="brand-logo-svg" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 30L25 10L38 30H12Z" fill="#0056b3" stroke="#0056b3" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M3 35H47" stroke="#0056b3" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M25 17L33 30H17L25 17Z" fill="#a4c2f4"/>
-                    </svg>
-                    <span class="brand-copy">
-                        <span class="brand-main">North Lakes</span>
-                        <span class="brand-sub">COMMERCIAL CLEANING</span>
-                    </span>
+                    <img class="brand-logo-img" src="images/logo.svg" alt="North Lakes Commercial Cleaning">
                 </a>
 
                 <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
@@ -36,11 +28,11 @@
                 </button>
 
                 <div class="nav-links" id="site-menu">
-                    <a href="#top">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services" class="dropdown-link">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
-                    <a href="#industries">Industries</a>
-                    <a href="#coverage">Service Areas</a>
+                    <a href="index.html#top">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="services/commercial-cleaning.html" class="dropdown-link">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <a href="industries.html">Industries</a>
+                    <a href="service-areas.html">Service Areas</a>
                     <a href="#about">Why Choose Us</a>
                     <a href="#contact">Contact</a>
                     <a href="tel:0712345678" class="nav-phone-btn">
@@ -99,9 +91,9 @@
                         </div>
                     </section>
 
-                    <aside class="hero-panel">
+                    <aside class="hero-panel" aria-hidden="true">
                         <div class="hero-photo-wrap">
-                            <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?q=80&w=1000" alt="Professional cleaner mopping a clean office lobby floor" class="hero-main-img">
+                            <img src="images/hero-office-cleaning.jpg" alt="Professional cleaner mopping a clean office lobby floor" class="hero-main-img">
                         </div>
                     </aside>
                 </div>
@@ -118,48 +110,56 @@
 
                     <div class="services-grid">
                         <article class="service-card">
+                            <a href="services/commercial-cleaning.html" class="service-card-link" aria-label="Learn more about commercial cleaning">
                             <figure class="service-img-container">
-                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600" alt="Office desks in a clean corporate office space">
+                                <img src="images/service-commercial-office.jpg" alt="Office desks in a clean corporate office space">
                             </figure>
                             <div class="service-card-body">
                                 <h3>Commercial Cleaning</h3>
                                 <p>Daily office cleaning, shared spaces, restrooms, and more.</p>
                             </div>
+                            </a>
                         </article>
 
                         <article class="service-card">
+                            <a href="services/floor-care.html" class="service-card-link" aria-label="Learn more about floor care">
                             <figure class="service-img-container">
-                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600" alt="Professional cleaner using a floor buffing machine on a hard floor">
+                                <img src="images/service-floor-care.jpg" alt="Professional cleaner using a floor buffing machine on a hard floor">
                             </figure>
                             <div class="service-card-body">
                                 <h3>Floor Care</h3>
                                 <p>Stripping, sealing, polishing and hard floor maintenance.</p>
                             </div>
+                            </a>
                         </article>
 
                         <article class="service-card">
+                            <a href="services/window-cleaning.html" class="service-card-link" aria-label="Learn more about window cleaning">
                             <figure class="service-img-container">
-                                <img src="https://images.unsplash.com/photo-1527263539676-1148825c347e?q=80&w=600" alt="Cleaner squeegeeing a large office window pane">
+                                <img src="images/service-window-cleaning.jpg" alt="Cleaner squeegeeing a large office window pane">
                             </figure>
                             <div class="service-card-body">
                                 <h3>Window Cleaning</h3>
                                 <p>Internal and external window cleaning for any building.</p>
                             </div>
+                            </a>
                         </article>
 
                         <article class="service-card">
+                            <a href="services/specialised-cleaning.html" class="service-card-link" aria-label="Learn more about specialised cleaning">
                             <figure class="service-img-container">
-                                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=600" alt="Sanitized commercial kitchen area with stainless steel surfaces">
+                                <img src="images/service-specialised-cleaning.jpg" alt="Sanitized commercial kitchen area with stainless steel surfaces">
                             </figure>
                             <div class="service-card-body">
                                 <h3>Specialised Cleaning</h3>
                                 <p>High-touch point disinfecting, end of lease, and more.</p>
                             </div>
+                            </a>
                         </article>
                     </div>
 
                     <div class="services-action">
-                        <a href="#contact" class="btn btn-outline">View All Services</a>
+                        <a href="services/commercial-cleaning.html" class="btn btn-outline">View All Services</a>
                     </div>
                 </div>
             </section>
@@ -168,7 +168,7 @@
             <section class="why-choose-us section" id="about">
                 <div class="container split-layout">
                     <div class="split-photo-panel">
-                        <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1000" alt="Two professional cleaners dusting and cleaning office workstations" class="split-img">
+                        <img src="images/office-desk-cleaning.jpg" alt="Two professional cleaners dusting and cleaning office workstations" class="split-img">
                     </div>
                     <div class="split-copy-panel">
                         <h2>Why choose North Lakes Commercial Cleaning?</h2>
@@ -334,25 +334,6 @@
                 </div>
             </section>
 
-            <!-- Coverage Areas (Subtitle Info support) -->
-            <section class="coverage-cities section" id="coverage">
-                <div class="container">
-                    <div class="section-heading">
-                        <span class="eyebrow">SERVICE AREAS</span>
-                        <h2>Proudly serving North Lakes & surrounding suburbs</h2>
-                    </div>
-                    <div class="coverage-suburbs-list">
-                        <span>North Lakes</span>
-                        <span>Mango Hill</span>
-                        <span>Griffin</span>
-                        <span>Murrumba Downs</span>
-                        <span>Kallangur</span>
-                        <span>Dakabin</span>
-                        <span>Rothwell</span>
-                        <span>Redcliffe</span>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <!-- Footer -->
@@ -361,15 +342,7 @@
                 <!-- Col 1 -->
                 <div class="footer-col brand-col">
                     <a href="#top" class="brand">
-                        <svg class="brand-logo-svg" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 30L25 10L38 30H12Z" fill="#0056b3" stroke="#0056b3" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M3 35H47" stroke="#0056b3" stroke-width="3" stroke-linecap="round"/>
-                            <path d="M25 17L33 30H17L25 17Z" fill="#a4c2f4"/>
-                        </svg>
-                        <span class="brand-copy">
-                            <span class="brand-main">North Lakes</span>
-                            <span class="brand-sub">COMMERCIAL CLEANING</span>
-                        </span>
+                        <img class="brand-logo-img" src="images/logo.svg" alt="North Lakes Commercial Cleaning">
                     </a>
                     <p class="footer-desc">
                         Reliable, professional and affordable cleaning services for businesses in North Lakes and surrounding areas.
@@ -385,12 +358,12 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul class="footer-menu">
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#industries">Industries</a></li>
-                        <li><a href="#coverage">Service Areas</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#top">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services/commercial-cleaning.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="service-areas.html">Service Areas</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -398,11 +371,11 @@
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul class="footer-menu">
-                        <li><a href="#services">Commercial Cleaning</a></li>
-                        <li><a href="#services">Floor Care</a></li>
-                        <li><a href="#services">Window Cleaning</a></li>
-                        <li><a href="#services">Specialised Cleaning</a></li>
-                        <li><a href="#services">End of Lease Cleaning</a></li>
+                        <li><a href="services/commercial-cleaning.html">Commercial Cleaning</a></li>
+                        <li><a href="services/floor-care.html">Floor Care</a></li>
+                        <li><a href="services/window-cleaning.html">Window Cleaning</a></li>
+                        <li><a href="services/specialised-cleaning.html">Specialised Cleaning</a></li>
+                        <li><a href="services/specialised-cleaning.html">End of Lease Cleaning</a></li>
                     </ul>
                 </div>
 
@@ -433,7 +406,7 @@
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <div class="container footer-bottom-layout">
-                    <p>&copy; 2026 North Lakes Commercial Cleaning. All rights reserved.</p>
+                    <p>&copy; 2024 North Lakes Commercial Cleaning. All rights reserved.</p>
                     <div class="footer-policy-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms & Conditions</a>

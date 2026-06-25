@@ -466,6 +466,13 @@ img {
     padding: 78px 0;
 }
 
+.content-band-alt {
+    padding: 78px 0;
+    background: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
 .detail-grid {
     display: grid;
     grid-template-columns: minmax(0, 0.78fr) minmax(300px, 0.38fr);
@@ -584,6 +591,151 @@ img {
     color: var(--text-muted);
     line-height: 1.62;
     font-size: 0.94rem;
+}
+
+.process-list {
+    display: grid;
+    gap: 18px;
+    margin-top: 26px;
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.process-step {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--secondary-light);
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+.process-item h3 {
+    color: var(--primary);
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.process-item p {
+    color: var(--text-muted);
+    line-height: 1.58;
+}
+
+.faq-list {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.faq-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-white);
+    padding: 22px;
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    color: var(--text-muted);
+    line-height: 1.62;
+}
+
+.scope-split {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 34px;
+}
+
+.scope-panel,
+.assurance-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-white);
+    padding: 26px;
+}
+
+.scope-panel h3,
+.assurance-card h3 {
+    color: var(--primary);
+    font-size: 1.08rem;
+    margin-bottom: 14px;
+}
+
+.scope-panel p,
+.assurance-card p {
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+.scope-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.scope-list li,
+.quote-detail-list li {
+    display: flex;
+    gap: 10px;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+.scope-list i,
+.quote-detail-list i {
+    color: var(--secondary);
+    margin-top: 4px;
+}
+
+.assurance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+.assurance-card i {
+    color: var(--secondary);
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+}
+
+.quote-detail-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 24px;
+    margin-top: 22px;
+}
+
+.copy-lede {
+    color: var(--text-muted);
+    line-height: 1.72;
+    max-width: 760px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.local-note {
+    margin-top: 30px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    line-height: 1.65;
 }
 
 .service-links-strip {
@@ -1057,6 +1209,12 @@ img {
 
     .page-hero-layout,
     .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scope-split,
+    .assurance-grid,
+    .quote-detail-list {
         grid-template-columns: 1fr;
     }
 

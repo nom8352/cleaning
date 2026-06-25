@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ].join("\n")
             );
 
-            window.location.href = `mailto:info@northlakescleaning.com.au?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:goodmanseo.sydney@gmail.com?subject=${subject}&body=${body}`;
         });
     }
 });

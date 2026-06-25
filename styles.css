@@ -1174,8 +1174,26 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     font-size: 0.85rem;
     color: var(--text-muted);
+}
+
+.demo-credit {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    line-height: 1.45;
+}
+
+.demo-credit a {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.demo-credit a:hover {
+    color: var(--secondary);
 }
 
 .footer-policy-links {

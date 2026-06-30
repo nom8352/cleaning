@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Add js-enabled class to HTML element for motion styling
+    document.documentElement.classList.add("js-enabled");
+
     const navbar = document.querySelector(".navbar");
     const mobileButton = document.querySelector(".mobile-menu-btn");
     const navLinks = document.querySelector(".nav-links");
     const form = document.querySelector("#quoteForm");
+    const revealItems = document.querySelectorAll(".reveal-item");
 
     const closeMenu = () => {
         if (!navLinks || !mobileButton) {
@@ -35,6 +39,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         navbar.classList.toggle("is-scrolled", window.scrollY > 24);
     });
+
+    // Scroll Reveal Intersection Observer
+    if (revealItems.length > 0) {
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: "0px 0px -40px 0px"
+            });
+
+            revealItems.forEach((item) => observer.observe(item));
+        } else {
+            revealItems.forEach((item) => item.classList.add("is-visible"));
+        }
+    }
 
     if (form) {
         form.addEventListener("submit", (event) => {

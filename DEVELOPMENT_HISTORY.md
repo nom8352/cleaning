@@ -1,91 +1,388 @@
-# 프로젝트 개발 및 작업 이력 히스토리 (DEVELOPMENT_HISTORY.md)
+# North Lakes Commercial Cleaning - Development History
 
-이 문서는 **North Lakes Commercial Cleaning** 웹사이트 프로젝트의 구축 과정, Git 기여도(잔디) 관리 이력, 그리고 추후 다른 환경에서 개발을 이어받아 진행할 때 필요한 주요 기술 정보를 기록한 연동 가이드 및 작업 히스토리 문서입니다.
+Last updated: 2026-06-25
 
----
+This document is the consolidated development history for the North Lakes Commercial Cleaning demo website. It merges the earlier build history with the current multi-page site state, Goodman SEO demo/sales positioning, documentation assets, design-system files, and deployment notes.
 
-## 1. 프로젝트 개요
-* **프로젝트명**: North Lakes Commercial Cleaning (브리즈번 북부 지역 상업용 청소 전문 업체 랜딩 페이지)
-* **웹 배포 URL**: [https://cleaning-1r8.pages.dev/](https://cleaning-1r8.pages.dev/) (Cloudflare Pages 연동 배포)
-* **깃허브 저장소**: [https://github.com/nom8352/cleaning.git](https://github.com/nom8352/cleaning.git)
-* **로컬 작업 디렉토리**: `f:\Antigravity\cleaning`
+## 1. Project Overview
 
----
+- Project name: North Lakes Commercial Cleaning
+- Project type: static HTML/CSS/JavaScript multi-page demo website
+- Business category shown: commercial cleaning
+- Location focus: North Lakes and surrounding suburbs, QLD
+- Owner/agency context: demo website by Goodman SEO
+- Intended use: portfolio/sample presentation and potential resale/customisation for a cleaning business buyer
+- Local workspace: `F:\Antigravity\cleaning`
+- GitHub repository: `https://github.com/nom8352/cleaning.git`
+- Current branch: `main`
+- Earlier Cloudflare Pages URL recorded: `https://cleaning-1r8.pages.dev/`
 
-## 2. 작업 역사 (Timeline)
+## 2. Current Site State
 
-### 2.1. 웹사이트 초기 구축 및 복구
-- HTML, CSS, JavaScript를 기반으로 모바일에 최적화된 반응형 1페이지 static 웹사이트를 설계했습니다.
-- 외부 무거운 프레임워크 없이 빠르고 안정적인 로딩을 위해 순수(Vanilla) 웹 기술을 지향하여 최적화했습니다.
-- Cloudflare Pages 호스팅 환경에서 렌더링이 빈 화면으로 나오던 이슈(AOS 스크롤 애니메이션 지연 문제)를 감지하고, 해당 라이브러리를 완전히 걷어내어 즉각적이고 안정적인 렌더링 구조로 개선했습니다.
+The project is no longer a one-page landing page. It is now a static multi-page commercial cleaning website.
 
-### 2.2. Git 계정 설정 및 과거 잔디 복구
-- 사용자의 깃허브 계정 정보로 기여가 기록될 수 있도록 로컬 Git 환경 설정을 재조정했습니다.
+Current public files:
+
+- `index.html`: homepage
+- `services/commercial-cleaning.html`: commercial cleaning details, regular scope, process, fit notes, quality/safety/communication, FAQs
+- `services/floor-care.html`: floor care details, surface care services, process, quote details, FAQs
+- `services/window-cleaning.html`: window cleaning details, internal/external glass scope, quote details, FAQs
+- `services/specialised-cleaning.html`: specialised cleaning, handover/reset cleaning, hygiene/high-touch focus, quote details, FAQs
+- `industries.html`: industries served and industry-specific cleaning considerations
+- `service-areas.html`: local service area coverage and suburb availability guidance
+- `styles.css`: design system, layout, responsive CSS, components, footer demo credit styling
+- `script.js`: mobile menu, sticky nav state, quote form mailto behaviour
+- `favicon.svg`
+- `images/`: local logo and generated cleaning imagery
+
+Current generated/local image assets:
+
+- `images/logo.svg`
+- `images/hero-office-cleaning.jpg`
+- `images/office-desk-cleaning.jpg`
+- `images/service-commercial-office.jpg`
+- `images/service-floor-care.jpg`
+- `images/service-window-cleaning.jpg`
+- `images/service-specialised-cleaning.jpg`
+
+## 3. Current Public Contact And Demo Details
+
+- Phone shown on site: `07 0000 0000`
+- Phone link: `tel:0700000000`
+- Email shown on site: `goodmanseo.sydney@gmail.com`
+- Quote form destination: `mailto:goodmanseo.sydney@gmail.com`
+- Location shown: `North Lakes, QLD 4509`
+- Hours shown: `Mon - Fri: 8:00am - 5:00pm`, `Sat - Sun: Closed`
+- Footer demo note: `Demo website by Goodman SEO. Contact Goodman SEO to customise or purchase this site.`
+- Footer agency link: `https://goodmanseo.com`
+
+The sample phone number is intentionally obvious. Do not replace it with a realistic-looking placeholder unless the site is being prepared for an actual buyer.
+
+## 4. Development Timeline
+
+### 4.1 Initial Static Website Build
+
+- Built the first version as a mobile-responsive static website using HTML, CSS, and vanilla JavaScript.
+- Avoided heavy frontend frameworks to keep the site fast, simple, and reliable for static hosting.
+- Implemented homepage sections for hero copy, service summary, trust messaging, quote CTA, testimonials, and footer contact information.
+- Established the project as a deployment-focused GitHub repository for public site files.
+
+### 4.2 Rendering Recovery And Simplification
+
+- Detected a blank-render issue in the earlier Cloudflare Pages-hosted site.
+- The issue was tied to delayed scroll animation/runtime behaviour from AOS-style animation.
+- Removed that dependency and moved the site back to immediate static rendering.
+- Kept JavaScript limited to practical behaviour: mobile menu, navbar scroll state, and mailto form handling.
+
+### 4.3 Git Configuration And Contribution-History Work
+
+- Local Git user configuration was adjusted so contributions could be associated with the intended GitHub account:
   - `user.name "nohmark"`
   - `user.email "nom8352@gmail.com"`
-- **과거 잔디심기 누락 보충 작업**:
-  - **1차 작업**: 6개월간의 활동 및 2026년 1월 13일부터 2월 11일까지 누락된 기간에 대해 무작위 커밋을 배치하여 잔디를 보충했습니다.
-  - **2차 작업 (2026-06-25)**: 이전 마지막 커밋 시점(2026-03-23)부터 오늘(2026-06-25)까지 약 **94일간의 공백**을 감지하고, 하루 3~5개씩 브리즈번 시간 기준(+1000)으로 다양한 시간대에 무작위 커밋을 생성하는 백데이트(Backdate) 스크립트를 제작해 실행하였습니다.
-  - **결과**: `grass_log.txt`에 기여 기록 타임스탬프를 남기며 원격 저장소 푸시를 마쳤으며, 94일 동안의 누락 잔디가 모두 깃허브 프로필에 채워진 것을 검증 완료했습니다.
+- Earlier history work included backfilled commits for missed contribution periods.
+- A later 2026-06-25 contribution-history pass recorded a 94-day gap and generated backdated commits in Brisbane time.
+- `grass_log.txt` recorded contribution timestamps and was later removed from Git tracking and kept local-only.
 
-### 2.3. 디자인 전면 개편 (2026-06-25)
-- 사용자로부터 받은 새로운 웹 디자인 시안 이미지에 맞춰 전체 구조와 스타일을 전면 개편했습니다.
-- **주요 레이아웃 및 컴포넌트 추가**:
-  - 상단 퀵 전화번호 단추(`📞 07 1234 5678`)가 우측에 들어간 화이트 톤의 깔끔한 네비게이션바 구축.
-  - 히어로 섹션 좌측 정렬(H1, 설명, 2개 CTA 단추, 하단 3대 핵심 신뢰 지표 배치) 및 우측 오피스 청소 사진 배치.
-  - 4열 그리드 형태의 핵심 서비스 카드(Commercial, Floor Care, Window, Specialised) 배치.
-  - 연한 하늘색 배경의 2컬럼 레이아웃 소개 섹션(체크리스트 장점 5가지 및 Learn More Us 단추 포함).
-  - 6가지 비즈니스 대상별 아이콘 그리드(Offices, Medical, Retail, Schools, Industrial, Body Corporate).
-  - 진한 네이비색 가로 정렬 견적 의뢰 폼 카드(Name, Email, Phone 및 초록색 CTA 단추).
-  - Sarah J., Michael T., Emma R. 등 3명의 후기 카드 및 캐러셀 도트.
-  - Footer: 4열 링크 및 Contact 상세(업무 시간 포함) 정보 정렬.
+Current note: this contribution-history material is historical. New project work should focus on normal source changes and clean deployment commits.
 
----
+### 4.4 Visual Redesign From Reference Image
 
-## 3. 웹사이트 기술 사양 (Technical Specification)
+- User provided a commercial-cleaning website reference image.
+- The site was redesigned to match that clean local-business style:
+  - White sticky navigation with logo and phone CTA
+  - Left-copy/right-image hero section
+  - Green quote CTA and navy secondary CTA
+  - Three hero trust signals
+  - Four image-led service cards
+  - Split image/text trust section
+  - Industry icon row
+  - Navy quote bar with inline form
+  - Three testimonial cards
+  - Four-column footer
+- A new local SVG logo was created and used in header/footer.
+- Local generated images were added for hero, office cleaning, and service cards.
 
-### 3.1. 기술 스택 및 라이브러리
-- **구조**: HTML5 (시맨틱 태그 구조 설계)
-- **스타일**: CSS3 (CSS Custom Properties 변수 활용, Flexbox & Grid 레이아웃 적용)
-- **인터랙션**: JavaScript (ES6+ Vanilla JS)
-- **아이콘**: FontAwesome 6.4.0 (CDN을 통해 불러옴)
-- **웹 폰트**: Google Fonts (Manrope & Space Grotesk 조합)
+### 4.5 Multi-Page Expansion
 
-### 3.2. CSS 변수 설계 (`styles.css` 참조)
+The site was expanded from a landing page into a multi-page site:
+
+- Added service pages:
+  - Commercial Cleaning
+  - Floor Care
+  - Window Cleaning
+  - Specialised Cleaning
+- Added:
+  - `industries.html`
+  - `service-areas.html`
+- Navigation, footer links, service cards, and cross-page paths were updated.
+- Page-level hero sections, breadcrumbs, side panels, content bands, service navigation strips, and local imagery were added.
+
+Related commit references:
+
+- `25ba085` - Redesign website structure and styles matching commercial cleaning layout
+- `4ef65af` - Expand commercial cleaning site pages
+
+### 4.6 Content Expansion And Australian Business English Pass
+
+- The initial added pages were too thin, so each page was expanded with richer copy.
+- Australian business English conventions were applied:
+  - `specialised`
+  - `sanitised`
+  - `amenities`
+  - `enquiries`
+  - `tailored quote`
+- Avoided American/corporate phrases such as `reach out`, `leverage`, `touch base`, and similar phrasing.
+- Service pages were expanded with:
+  - deeper inclusions
+  - periodic work
+  - process steps
+  - quote-detail checklists
+  - quality, safety, and communication notes
+  - FAQ content
+- Australian commercial-cleaning company content patterns were reviewed and adapted into original site copy.
+
+Related commit reference:
+
+- `a2e5f7d` - Expand cleaning service page content
+
+### 4.7 Goodman SEO Demo And Sales Positioning
+
+- Contact email was changed from the earlier placeholder cleaning-company email to `goodmanseo.sydney@gmail.com`.
+- Quote form mailto destination was changed to `goodmanseo.sydney@gmail.com`.
+- Phone number was changed from `07 1234 5678` to `07 0000 0000` so it is clearly a sample number.
+- Footer demo disclosure was added:
+  - `Demo website by Goodman SEO. Contact Goodman SEO to customise or purchase this site.`
+- `Goodman SEO` in the footer links to `https://goodmanseo.com`.
+- The demo disclosure is intentionally placed only in the footer. This keeps the site credible as a realistic cleaning-business demo while still being transparent.
+
+Related commit reference:
+
+- `bbbdd93` - Update demo contact details
+
+### 4.8 Local Documentation And Impeccable Design System
+
+- Public website copy was archived in Markdown:
+  - `docs/site-content.md`
+- Current design system was documented in Impeccable/Stitch-compatible form:
+  - `DESIGN.md`
+- Impeccable sidecar was generated:
+  - `.impeccable/design.json`
+- Local memory/status docs were updated:
+  - `docs/current-status.md`
+  - `wiki/sites/cleaning-company.md`
+- `DEVELOPMENT_HISTORY.md` was added and then consolidated into this latest version.
+
+Related commit reference:
+
+- `835a5c8` - Add development and commit history logs (DEVELOPMENT_HISTORY.md)
+
+### 4.9 SEO Metadata And Deployment Files
+
+- Added page-specific title tags and meta descriptions across all 7 public pages.
+- Added canonical URLs using the current Cloudflare Pages URL:
+  - `https://cleaning-1r8.pages.dev/`
+- Added Open Graph and Twitter Card tags with page-specific preview images.
+- Added JSON-LD structured data:
+  - homepage: `WebSite` and `Organization`
+  - service pages: `Service` and `BreadcrumbList`
+  - industry/service-area pages: `WebPage` and `BreadcrumbList`
+- Added public SEO deployment files:
+  - `robots.txt`
+  - `sitemap.xml`
+- `FAQPage` schema was intentionally not added because Google removed the FAQ rich result feature in June 2026.
+- Full buyer-grade `LocalBusiness` schema is intentionally deferred until the site has real client contact details and verified business information.
+
+## 5. Technical Specification
+
+### 5.1 Stack
+
+- HTML5
+- CSS3 with custom properties
+- Vanilla JavaScript
+- Font Awesome 6.4.0 via CDN
+- Google Fonts:
+  - Manrope
+  - Space Grotesk
+
+### 5.2 Main CSS Tokens
+
+Current CSS custom properties in `styles.css`:
+
 ```css
 :root {
-    --primary: #0a2d5c;       /* 딥 네이비 블루 */
-    --secondary: #0ea976;     /* 강조 초록색 */
-    --secondary-light: #e6f6f1;/* 연한 녹색 배경 */
-    --bg-light: #f4f8fc;      /* 섹션 구분용 연한 파랑-그레이 배경 */
+    --primary: #073b73;
+    --primary-hover: #062d5b;
+    --secondary: #18aa72;
+    --secondary-hover: #139260;
+    --secondary-light: #e6f6f1;
+    --bg-light: #f4f8fc;
     --bg-white: #ffffff;
-    --text-dark: #1e293b;     /* 기본 본문 색상 */
-    --text-muted: #64748b;    /* 설명용 흐린 글씨 */
-    --border-color: #e2e8f0;  /* 경계선 테두리 */
-    --quote-bar-bg: #073875;  /* 견적 폼 배경 */
+    --bg-footer: #f8fafc;
+    --text-dark: #1d2b3d;
+    --text-muted: #5f7188;
+    --border-color: #d9e4ef;
+    --quote-bar-bg: #063f7b;
+    --font-body: "Manrope", sans-serif;
+    --font-display: "Space Grotesk", sans-serif;
+    --container-width: 1120px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 1px 2px rgba(7, 59, 115, 0.08);
+    --shadow-md: 0 8px 22px rgba(7, 59, 115, 0.08);
+    --shadow-lg: 0 18px 40px rgba(7, 59, 115, 0.12);
 }
 ```
 
-### 3.3. JavaScript 동작 (`script.js` 참조)
-- **모바일 햄버거 메뉴**: 모바일 뷰포트에서 `.mobile-menu-btn`을 클릭하면 메뉴판(`.nav-links`)에 `.is-active` 클래스가 추가되며 메뉴가 팝업식으로 펼쳐집니다. 메뉴 링크를 클릭하거나 다시 햄버거 버튼을 누르면 메뉴가 부드럽게 닫힙니다.
-- **네비게이션바 스크롤 처리**: 사용자가 페이지를 24px 이상 스크롤할 시 `.navbar`에 `.is-scrolled` 클래스가 추가되어 얇은 그림자가 아래에 깔립니다.
-- **견적 요청 메일 전송**: 견적 신청 폼(`#quoteForm`)을 작성하고 제출하면, 입력값(이름, 이메일, 전화번호)을 조합하여 브라우저 기본 이메일 앱(mailto:)으로 `info@northlakescleaning.com.au` 수신처와 제목 및 본문을 미리 기입하여 연결해 줍니다.
+### 5.3 JavaScript Behaviour
 
----
+`script.js` handles:
 
-## 4. 추후 다른 환경에서 작업 시 진행할 사항 (Next Steps)
-1. **깃 저장소 클론**:
-   새로운 로컬 환경에서 작업을 이어갈 때는 아래 명령어로 저장소를 다운로드합니다.
-   ```bash
-   git clone https://github.com/nom8352/cleaning.git
-   ```
-2. **Git 유저 정보 다시 세팅**:
-   동일하게 잔디를 이어 심거나 커밋하려면 해당 로컬 폴더에서 Git 사용자 정보를 다시 설정해 줍니다.
-   ```bash
-   git config user.name "nohmark"
-   git config user.email "nom8352@gmail.com"
-   ```
-3. **연락처 및 링크 최종 갱신**:
-   실서버 출시 전 실제 이메일 및 전화번호, 오스트레일리아 도메인 주소가 확정되면 관련 파일(`index.html`, `script.js`)에 기록된 `info@northlakescleaning.com.au` 및 전화번호 `07 1234 5678` 등을 일괄 교체해 주어야 합니다.
-4. **SEO 및 Schema 데이터 보완**:
-   검색최적화(SEO)를 위한 추가 메타태그 배치와 구글 검색 노출을 위한 Schema.org (LocalBusiness 유형) 구조화 데이터를 작성하여 `index.html` 내부에 주입하면 좋습니다.
+- Mobile nav toggle using `.is-active`
+- Menu close when a nav link is clicked
+- Sticky navbar state using `.is-scrolled`
+- Quote form mailto generation with name, email, and phone fields
+
+Current quote form destination:
+
+```text
+goodmanseo.sydney@gmail.com
+```
+
+## 6. Current Design System Summary
+
+Source documents:
+
+- `DESIGN.md`
+- `.impeccable/design.json`
+- `docs/sample-site-playbook.md`
+
+Design north star:
+
+- `The Clean Local Operator`
+
+Key design principles:
+
+- Bright white base with blue-tinted service panels
+- Navy for authority and green for quote/action moments
+- Realistic cleaning photography
+- Compact, scan-friendly cards
+- Footer-only Goodman SEO demo disclosure
+
+Current major colors:
+
+- Primary navy: `#073b73`
+- Deep navy: `#062d5b`
+- Quote navy: `#063f7b`
+- CTA green: `#18aa72`
+- CTA green hover: `#139260`
+- Light panel: `#f4f8fc`
+- Body text: `#1d2b3d`
+- Muted text: `#5f7188`
+- Border: `#d9e4ef`
+
+## 7. Validation History
+
+Recent validation performed:
+
+- Local HTML link/reference check across 7 HTML pages: no missing local references
+- HTTP check across 17 local URLs/assets: no failures
+- Playwright browser load check across all public pages: 0 console errors
+- Representative mobile checks on service pages: page structure renders within viewport
+- Impeccable detector: only `single-font` warning; accepted because the project intentionally uses Manrope/Space Grotesk as its current brand typography system
+- `.impeccable/design.json`: JSON validation passed
+- `DESIGN.md`: required six sections present
+- SEO metadata check across 7 public pages: title length 47-55 characters, meta description length 141-154 characters, one H1 per page
+- JSON-LD parse check: all structured-data blocks parse successfully
+- `sitemap.xml` XML parse check: valid
+
+## 8. Git And Deployment Notes
+
+Current remote:
+
+```bash
+origin https://github.com/nom8352/cleaning.git
+```
+
+Current branch:
+
+```bash
+main
+```
+
+Important recent commits:
+
+- `835a5c8` - Add development and commit history logs (DEVELOPMENT_HISTORY.md)
+- `bbbdd93` - Update demo contact details
+- `a2e5f7d` - Expand cleaning service page content
+- `4ef65af` - Expand commercial cleaning site pages
+- `25ba085` - Redesign website structure and styles matching commercial cleaning layout
+
+The GitHub repository is intended for public website deployment files only.
+
+Local-only files/folders:
+
+- `AGENTS.md`
+- `docs/`
+- `wiki/`
+- `raw/`
+- `.agents/`
+- `.codex/`
+- `.impeccable/`
+- `PRODUCT.md`
+- `DESIGN.md`
+- `grass_log.txt`
+
+These are excluded through `.git/info/exclude` and should remain local unless the user explicitly asks to publish them.
+
+## 9. Handoff Guide For Future Work
+
+Start by reading:
+
+1. `AGENTS.md`
+2. `docs/current-status.md`
+3. `wiki/index.md`
+4. `wiki/sites/cleaning-company.md`
+5. `DEVELOPMENT_HISTORY.md`
+6. `docs/site-content.md`
+7. `DESIGN.md`
+
+If updating public site copy:
+
+- Update the HTML pages.
+- Update `docs/site-content.md`.
+- Keep Australian business English conventions.
+- Preserve Goodman SEO demo/sales positioning unless the user changes the goal.
+
+If updating design:
+
+- Update `styles.css`.
+- Update `DESIGN.md`.
+- Update `.impeccable/design.json` if components, tokens, colors, shadows, or layout rules change.
+
+If creating another niche demo site:
+
+- Start from `docs/sample-site-playbook.md`.
+- Follow `wiki/workflows/create-sample-site.md`.
+- Create a site-specific wiki page before writing code.
+- Keep the Goodman SEO demo contact and footer disclosure unless the user changes the sales strategy.
+
+If preparing the site for a real cleaning business buyer:
+
+1. Replace `07 0000 0000` with the buyer's real phone number.
+2. Replace `goodmanseo.sydney@gmail.com` with the buyer's final receiving email, or keep it if Goodman SEO will handle leads.
+3. Replace placeholder testimonials with real testimonials or remove them.
+4. Replace `#` social, privacy, and terms links with real links.
+5. Confirm whether the Goodman SEO footer credit should remain, be reduced, or be removed.
+6. Replace generated imagery with approved client photography if available.
+7. Replace the current canonical URL if the buyer uses a custom domain.
+8. Add verified buyer-specific `LocalBusiness` schema after final phone, address, hours, and business identity are confirmed.
+9. Add an analytics tag if required.
+
+## 10. Open Items
+
+- Final buyer/client details are not yet known.
+- Phone number is intentionally sample-only.
+- Testimonials may still be placeholder copy.
+- Footer social links still use `#`.
+- Privacy Policy and Terms & Conditions links still use `#`.
+- Current canonical/sitemap domain uses `https://cleaning-1r8.pages.dev/`; replace it if a final custom domain is chosen.
+- Generated images are good for the demo but may need replacement for a real buyer.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cleaning-1r8.pages.dev/brisbane-commercial-cleaning/sitemap.xml

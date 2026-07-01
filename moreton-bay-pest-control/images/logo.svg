@@ -1,8 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-labelledby="title">
-  <title id="title">BayShield Pest Control</title>
-  <rect width="220" height="64" rx="14" fill="#f7f4ed"/>
-  <circle cx="32" cy="32" r="18" fill="#4f7b62"/>
-  <path d="M23 34c7-12 16-12 24 0M28 40h29" fill="none" stroke="#f1c84b" stroke-width="5" stroke-linecap="round"/>
-  <text x="62" y="29" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#26352f">BayShield</text>
-  <text x="62" y="47" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#5f6d63">PEST CONTROL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 74" role="img" aria-labelledby="title">
+  <title id="title">Moreton Bay Pest Control</title>
+  <defs>
+    <linearGradient id="mark" x1="16" y1="12" x2="52" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3f8b54"/>
+      <stop offset="1" stop-color="#174638"/>
+    </linearGradient>
+  </defs>
+  <path d="M34 8 57 17v17c0 16-9 28-23 34C20 62 11 50 11 34V17L34 8Z" fill="#f7fbf3" stroke="#2f7d47" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M34 17 48 22v12c0 10-5 18-14 23-9-5-14-13-14-23V22l14-5Z" fill="url(#mark)"/>
+  <path d="M34 25v22M27 32h14M25 40h18M29 29l-5-4M39 29l5-4M28 46l-5 5M40 46l5 5" fill="none" stroke="#eef8dc" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="34" cy="38" r="5" fill="#eef8dc"/>
+  <text x="72" y="32" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing=".5" fill="#173f34">MORETON BAY</text>
+  <text x="72" y="55" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500" letter-spacing="1.2" fill="#173f34">PEST CONTROL</text>
 </svg>

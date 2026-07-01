@@ -7,6 +7,49 @@ if (toggle && links) {
   });
 }
 
+const dropdowns = document.querySelectorAll(".nav-dropdown");
+dropdowns.forEach((dropdown) => {
+  const button = dropdown.querySelector(".nav-dropdown-toggle");
+  const submenuLinks = dropdown.querySelectorAll(".nav-submenu a");
+  if (!button) return;
+
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const open = dropdown.classList.toggle("is-open");
+    button.setAttribute("aria-expanded", String(open));
+  });
+
+  submenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      dropdown.classList.remove("is-open");
+      button.setAttribute("aria-expanded", "false");
+      if (links && links.classList.contains("is-open")) {
+        links.classList.remove("is-open");
+        toggle?.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+});
+
+document.addEventListener("click", (event) => {
+  dropdowns.forEach((dropdown) => {
+    if (dropdown.contains(event.target)) return;
+    const button = dropdown.querySelector(".nav-dropdown-toggle");
+    dropdown.classList.remove("is-open");
+    button?.setAttribute("aria-expanded", "false");
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  dropdowns.forEach((dropdown) => {
+    const button = dropdown.querySelector(".nav-dropdown-toggle");
+    dropdown.classList.remove("is-open");
+    button?.setAttribute("aria-expanded", "false");
+  });
+});
+
 const form = document.querySelector("[data-enquiry-form]");
 if (form) {
   form.addEventListener("submit", (event) => {

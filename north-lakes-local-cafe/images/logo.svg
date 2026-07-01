@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-labelledby="title">
-  <title id="title">Corner Table Cafe</title>
-  <rect width="220" height="64" rx="14" fill="#fff8f2"/>
-  <circle cx="32" cy="32" r="18" fill="#104b3c"/>
-  <path d="M23 34c7-12 16-12 24 0M28 40h29" fill="none" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
-  <text x="62" y="29" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#28201d">Corner</text>
-  <text x="62" y="47" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#755f55">CAFE AND CATERING</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 86" role="img" aria-labelledby="title desc">
+  <title id="title">Corner Table Cafe and Catering</title>
+  <desc id="desc">A refined script C mark beside Corner Table Cafe and Catering text.</desc>
+  <path d="M45 15c-16 4-29 20-31 34-2 13 6 22 19 19 12-3 24-16 31-31" fill="none" stroke="#191714" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M53 28c-9 3-18 11-22 20-3 7-2 13 4 14 8 2 19-6 26-18" fill="none" stroke="#191714" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="82" y="39" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="500" fill="#191714">Corner Table</text>
+  <text x="83" y="58" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#191714">CAFE &amp; CATERING</text>
 </svg>

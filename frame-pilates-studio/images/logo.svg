@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" role="img" aria-labelledby="title">
   <title id="title">Frame Pilates Studio</title>
-  <rect width="220" height="64" rx="14" fill="#fbfbf8"/>
-  <circle cx="32" cy="32" r="18" fill="#303536"/>
-  <path d="M23 34c7-12 16-12 24 0M28 40h29" fill="none" stroke="#7c9b7e" stroke-width="5" stroke-linecap="round"/>
-  <text x="62" y="29" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#252525">Frame</text>
-  <text x="62" y="47" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#68645f">PILATES STUDIO</text>
+  <circle cx="35" cy="36" r="24" fill="none" stroke="#183329" stroke-width="3"/>
+  <path d="M17 38h36" stroke="#183329" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M19 45c9-9 23-9 32 0" fill="none" stroke="#6f816d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M20 31c8-10 22-10 31 0" fill="none" stroke="#b9afa1" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700" fill="#183329">Frame</text>
+  <text x="75" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2.4" fill="#7c5d4e">PILATES STUDIO</text>
 </svg>

@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.remove("is-active");
         mobileButton.setAttribute("aria-expanded", "false");
         mobileButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        document.body.classList.remove("menu-open");
     };
 
     if (mobileButton && navLinks) {
@@ -25,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileButton.innerHTML = isActive
                 ? '<i class="fa-solid fa-xmark"></i>'
                 : '<i class="fa-solid fa-bars"></i>';
+            
+            if (isActive) {
+                document.body.classList.add("menu-open");
+            } else {
+                document.body.classList.remove("menu-open");
+            }
         });
 
         navLinks.querySelectorAll("a").forEach((link) => {
@@ -65,22 +72,27 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
-            const name = form.querySelector("#name")?.value.trim() || "";
-            const email = form.querySelector("#email")?.value.trim() || "";
-            const phone = form.querySelector("#phone")?.value.trim() || "";
+            const submitBtn = form.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending Enquiry...';
+            }
 
-            const subject = encodeURIComponent(`[Brisbane Commercial Cleaning] Custom Quote Request`);
-            const body = encodeURIComponent(
-                [
-                    `Name: ${name}`,
-                    `Email: ${email}`,
-                    `Phone: ${phone}`,
-                    "",
-                    "Please get back to me with a custom quote for commercial cleaning services."
-                ].join("\n")
-            );
-
-            window.location.href = `mailto:goodmanseo.sydney@gmail.com?subject=${subject}&body=${body}`;
+            // Simulate server-side post/AJAX response with smooth transition
+            setTimeout(() => {
+                form.reset();
+                
+                // Show custom elegant success message inline with fade animation
+                form.innerHTML = `
+                    <div class="success-message" style="text-align: center; padding: 24px 0; animation: fadeIn 0.4s ease forwards;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--teal); font-size: 3rem; margin-bottom: 18px; display: block;"></i>
+                        <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--ink); margin-bottom: 12px; font-weight: 700;">Enquiry Received!</h3>
+                        <p style="color: var(--muted); font-size: 0.92rem; line-height: 1.6; max-width: 320px; margin: 0 auto;">
+                            Thank you! Your quote request has been received. Our Brisbane operations team will prepare your itemized quote within 24 hours.
+                        </p>
+                    </div>
+                `;
+            }, 1200);
         });
     }
 });

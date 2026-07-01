@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cleaning-1r8.pages.dev/clearpath-mortgage-brokers/sitemap.xml
